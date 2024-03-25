@@ -1,0 +1,17 @@
+@use "variables" as *;
+@use "functions" as *;
+
+$type: (
+    font-weight: (
+        regular: 400,
+        semibold: 600,
+        bold: 700
+    ),
+    typescale: (
+        500: rem($size-5),
+        400: rem($size-4),
+        300: rem($size-2),
+        200: rem($size-1),
+        100: rem(14)
+    )
+)

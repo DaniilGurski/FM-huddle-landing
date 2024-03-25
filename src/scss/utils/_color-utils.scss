@@ -1,0 +1,51 @@
+/*
+color utilities
+*/
+.clr-primary {
+    color: var(--clr-primary);
+}
+
+.clr-secondary {
+    color: var(--clr-secondary);
+}
+
+.clr-body {
+    color: var(--clr-body);
+}
+
+.clr-accent {
+    color: var(--clr-accent);
+}
+
+.clr-light-cyan {
+    color: var(--clr-cyan-100);
+}
+
+.clr-dark-cyan {
+    color: var(--clr-cyan-500);
+}
+
+
+.bg-primary {
+    background: var(--clr-primary);
+}
+
+.bg-secondary {
+    background: var(--clr-secondary);
+}
+
+.bg-body {
+    background: var(--clr-body);
+}
+
+.bg-accent {
+    background: var(--clr-accent);
+}
+
+.clr-light-cyan {
+    background: var(--clr-cyan-100);
+}
+
+.clr-dark-cyan {
+    background: var(--clr-cyan-500);
+}

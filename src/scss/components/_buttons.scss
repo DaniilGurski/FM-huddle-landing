@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.button {
+    --_button-padding: 1em;
+    --_button-border-radius: 3rem;
+
+    width: min(90%, 18rem);
+    padding: var(--_button-padding) calc(var(--_button-padding) * 2);
+
+    color: var(--button-color, var(--clr-primary));
+    background-color: var(--button-bg-color, var(--clr-accent));
+
+    border: none;
+    border-radius: var(--_button-border-radius);
+    box-shadow: 0px 1px 4px var(--clr-shadow);
+
+    font-weight: var(--fw-semibold);
+
+    cursor: pointer;
+
+    &--alt {
+        --button-color: var(--clr-secondary);
+        --button-bg-color: var(--clr-primary);
+    }
+}

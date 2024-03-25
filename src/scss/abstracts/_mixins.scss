@@ -1,0 +1,46 @@
+@use "colors" as *;
+@use "type" as *;
+
+// Mixin to convert color map either into css custom properties or class utilities
+@mixin convert_colors() {
+    $color-map: $colors;
+
+    @each $role, $shades in $color-map {
+
+        @each $lightness, $color in $shades {
+            --clr-#{$role}-#{$lightness}: #{$color};
+        }
+    }
+}
+
+
+// Mixin to convert map with typography related values either into css custom properties or class utilities
+@mixin convert_typography() {
+    $typeography-map: $type;
+    
+    @each $key, $map in $typeography-map {
+        @if $key == "font-weight" {
+            @each $key, $value in $map {
+                --fw-#{$key}: #{$value};
+            }
+        }
+
+        @if $key == "typescale" {
+            @each $key, $value in $map {
+                --fs-#{$key}: #{$value};
+            }
+        }
+    }
+}
+
+
+@mixin flex($gap: 1rem) {
+    display: flex;
+    gap: $gap;
+}
+
+
+@mixin grid($gap: 1rem) {
+    display: grid;
+    gap: $gap;
+}
