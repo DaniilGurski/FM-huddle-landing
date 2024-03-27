@@ -8,10 +8,20 @@ $type: (
         bold: 700
     ),
     typescale: (
-        500: rem($size-5),
-        400: rem($size-4),
-        300: rem($size-2),
-        200: rem($size-1),
-        100: rem(14)
+        mobile: (
+            500: rem($size-4),
+            400: rem($size-2),
+            300: rem($size-3),
+            200: rem($size-2),
+            100: rem(14)
+        ),
+
+        desktop: (
+            500: rem($size-5),
+            400: rem($size-3),
+            300: rem($size-2),
+            200: rem($size-2),
+            100: rem($size-1)
+        )
     )
 )

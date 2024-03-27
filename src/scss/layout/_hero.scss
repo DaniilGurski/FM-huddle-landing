@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.hero {
+    background: var(--clr-cyan-100) url("../../../dist/img/bg-hero-mobile.svg");
+
+    &__main {
+        padding-block: 4.5rem;
+        justify-items: center;
+        --gap: 3.5rem;
+
+        img {
+            width: min(80%, 40rem);
+        }
+    }
+
+
+    &__cta {
+        --gap: 1rem;
+        justify-items: center;
+        text-align: center;
+
+
+        p {
+            font-size: var(--fs-200);
+        }
+    }
+}

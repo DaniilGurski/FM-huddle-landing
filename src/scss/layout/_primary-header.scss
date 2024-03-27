@@ -1,0 +1,11 @@
+.primary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+    button {
+        width: min(15rem, 40%);
+    }
+}

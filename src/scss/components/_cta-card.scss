@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.cta-card {
+    --_card-padding: var(--card-padding, 2rem);
+    
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+    grid-template-areas:
+    "img"
+    "text";
+
+    padding: var(--_card-padding);
+    padding-top: 3.5rem;
+    
+    text-align: center;
+    
+    @include mq-desktop() {
+        --card-padding: 2rem 4rem;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "text img";
+
+        column-gap: 2rem;
+        align-items: center;
+        text-align: start;
+    }
+
+
+    &__text {
+        @include grid();
+        grid-area: text;
+    }
+
+
+    img {
+        width: 25rem;
+        grid-area: img;
+    }
+}

@@ -1,5 +1,7 @@
 @use "colors" as *;
 @use "type" as *;
+@use "variables" as *;
+
 
 // Mixin to convert color map either into css custom properties or class utilities
 @mixin convert_colors() {
@@ -26,8 +28,19 @@
         }
 
         @if $key == "typescale" {
-            @each $key, $value in $map {
-                --fs-#{$key}: #{$value};
+            @each $screen-size, $typescale in $map {
+                
+                @if $screen-size == "desktop" {
+                    @include mq-desktop() {
+                        @each $scale, $value in $typescale {
+                            --fs-#{$scale}: #{$value};
+                        }
+                    }
+                } @else {
+                    @each $scale, $value in $typescale {
+                        --fs-#{$scale}: #{$value};
+                    }
+                }
             }
         }
     }
@@ -43,4 +56,11 @@
 @mixin grid($gap: 1rem) {
     display: grid;
     gap: $gap;
+}
+
+
+@mixin mq-desktop() {
+    @media (min-width: 40em) {
+        @content;
+    }
 }

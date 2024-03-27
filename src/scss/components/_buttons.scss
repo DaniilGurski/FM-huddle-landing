@@ -4,7 +4,7 @@
     --_button-padding: 1em;
     --_button-border-radius: 3rem;
 
-    width: min(90%, 18rem);
+    width: min(90%, 15rem);
     padding: var(--_button-padding) calc(var(--_button-padding) * 2);
 
     color: var(--button-color, var(--clr-primary));
@@ -20,6 +20,6 @@
 
     &--alt {
         --button-color: var(--clr-secondary);
-        --button-bg-color: var(--clr-primary);
+        --button-bg-color: var(--clr-primary-100);
     }
 }

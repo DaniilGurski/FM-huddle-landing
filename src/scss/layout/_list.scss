@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+
+/*
+list rules
+*/ 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+// /* marker element */
+// &:has([data-marker])::before {
+//     content: "";
+//     position: absolute;
+//     width: 1rem;
+//     aspect-ratio: 1;
+
+//     transform: translateX(-100%);
+// }
+
+
+// /* email marker */
+// &[data-marker="email"]::before {
+//     background: url("../../../dist/img/icon-email.svg");
+//     z-index: 100;
+// }

@@ -1,0 +1,7 @@
+.logo {
+    width: 9rem;
+
+    &--alt {
+        filter: grayscale(100) brightness(100);
+    }
+}

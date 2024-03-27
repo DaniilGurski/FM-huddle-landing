@@ -22,14 +22,18 @@ h1 {
 }
 
 h2 {
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
 }
 
-h3 {
-    font-size: var(--fs-300);
+/* 
+paragraphs
+*/
+p {
+    color: var(--clr-cyan-500);
 }
 
 
 .heading {
     font-family: var(--ff-heading);
+    color: var(--clr-secondary);
 }
