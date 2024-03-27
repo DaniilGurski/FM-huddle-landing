@@ -9,17 +9,129 @@
 
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/4b3e562abc.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
 
 <body>
-
   <section class="hero">
-
     <header class="primary-header">
-      <img src="" alt="" srcset="">
+      <img class="logo" src="dist/img/logo.svg" alt="huddle logo">
+      <button class="button button--alt">Try It Free</button>
+    </header>
+
+    <div class="hero__container container">
+      <div class="hero__main | grid">
+        <div class="hero__cta | grid">
+          <h1 class="heading">Build The Community Your Fans Will Love</h1>
+          <p class="clr-secondary">
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+            Create connections with your users as you engage in genuine discussion.
+          </p>
+          <button class="button">Get Started For Free</button>
+        </div>
+        <img src="dist/img/illustration-mockups.svg"aria-hidden="true">
+      </div>
+    </div>
   </section>
+
+  <main class="main">
+    <div class="container">
+      <div class="grid">
+        
+        <!-- card 1 -->
+        <article class="cta-card | frame">
+          <div class="cta-card__text">
+            <h2 class="heading">Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form. 
+            </p>
+          </div>
+          <img src="dist/img/illustration-grow-together.svg" aria-hidden="true">
+        </article>
+
+        <!-- card 2 -->
+        <article class="cta-card | frame">
+          <div class="cta-card__text">
+            <h2 class="heading">Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+              have just-in-time loading for a more natural flow.
+            </p>
+          </div>
+          <img src="dist/img/illustration-flowing-conversation.svg" aria-hidden="true">
+        </article>
+
+        <!-- card 3 -->
+        <article class="cta-card | frame">
+          <div class="cta-card__text">
+            <h2 class="heading">Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's authentication solution. 
+              This means, once signed in to your app, your users can start chatting immediately.            
+            </p>
+          </div>
+          <img src="dist/img/illustration-your-users.svg" aria-hidden="true">
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__cta | grid frame">
+      <span class="| clr-secondary"> Ready To Build Your Community? </span>
+      <button class="button">Get Started For Free</button>
+    </div>
+
+    <div class="footer__main | bg-secondary clr-primary">
+      <div class="footer__container | container grid">
+        <img class="logo logo--alt" src="dist/img/logo.svg" alt="huddle logo">
+        <div class="footer__links | grid">
+          <!-- contact -->
+          <div class="footer__contact">
+            <ul class="| grid">
+              <li class="footer__list-item" data-marker="location">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua
+              </li>
+              <li class="footer__list-item" data-marker="tel">
+                +1-543-123-4567
+              </li>
+              <li class="footer__list-item" data-marker="email">
+                example@huddle.com
+              </li>
+            </ul>
+          </div>
+          <!-- other info -->
+          <div class="footer__info">
+            <ul>
+              <li><a class="footer__link" href="#">About us  </a></li>
+              <li><a class="footer__link" href="#">What We Do</a></li>
+              <li><a class="footer__link" href="#">FAQ       </a></li>
+            </ul>
+            <ul>
+              <li> <a class="footer__link" href="#">Career</a> </li>
+              <li> <a class="footer__link" href="#">Blog</a> </li>
+              <li> <a class="footer__link" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- socials -->
+          <div class="footer__socials | grid">
+            <ul class="| flex">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+        <span class="footer__copyright"> &copy; Copyright 2018 Huddle. All rights reversed </span>
+      </div>
+    </div>
+  </footer>
 
   <!-- Try It Free
 
