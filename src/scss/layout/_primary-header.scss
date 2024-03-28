@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
 
+    width: min(90rem, 100%);
+    margin-inline: auto;
+
     padding: 1rem;
 
     button {

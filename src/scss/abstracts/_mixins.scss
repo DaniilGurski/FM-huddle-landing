@@ -1,6 +1,7 @@
 @use "colors" as *;
 @use "type" as *;
 @use "variables" as *;
+@use "functions" as *;
 
 
 // Mixin to convert color map either into css custom properties or class utilities
@@ -60,7 +61,7 @@
 
 
 @mixin mq-desktop() {
-    @media (min-width: 40em) {
+    @media (min-width: em(780)) {
         @content;
     }
 }

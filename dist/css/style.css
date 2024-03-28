@@ -133,13 +133,12 @@ p {
   --fs-400: 1.125rem;
   --fs-300: 1.5rem;
   --fs-200: 1.125rem;
-  --fs-100: 0.875rem;
   --ff-primary: "Open Sans", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-secondary);
 }
-@media (min-width: 40em) {
+@media (min-width: 48.75em) {
   :root {
     --fs-500: 2rem;
     --fs-400: 1.5rem;
@@ -177,7 +176,7 @@ p {
   padding-top: 3.5rem;
   text-align: center;
 }
-@media (min-width: 40em) {
+@media (min-width: 48.75em) {
   .cta-card {
     --card-padding: 2rem 4rem;
     grid-template-columns: 1fr 1fr;
@@ -294,28 +293,47 @@ color utilities
 
 .hero {
   background: var(--clr-cyan-100) url("../../../dist/img/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  /* change hero bg image */
 }
 .hero__main {
-  padding-block: 4.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-items: center;
+  align-items: center;
   --gap: 3.5rem;
+  padding-block: 4.5rem;
 }
 .hero__main img {
-  width: min(80%, 40rem);
+  width: min(90%, 40rem);
 }
 .hero__cta {
-  --gap: 1rem;
+  --gap: 2rem;
   justify-items: center;
   text-align: center;
+  text-wrap: balance;
+}
+@media (min-width: 48.75em) {
+  .hero__cta {
+    text-align: start;
+    justify-items: start;
+  }
 }
 .hero__cta p {
   font-size: var(--fs-200);
+}
+@media (min-width: 48.75em) {
+  .hero {
+    background: var(--clr-cyan-100) url("../../../dist/img/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .primary-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: min(90rem, 100%);
+  margin-inline: auto;
   padding: 1rem;
 }
 .primary-header button {
@@ -343,6 +361,7 @@ footer
   width: min(100%, 40rem);
   margin-inline: auto;
   justify-items: center;
+  align-items: center;
   padding-block: 2rem;
   grid-area: cta;
   grid-row: 1/3;
@@ -362,7 +381,8 @@ footer
   padding-block: 2rem;
 }
 .footer__links {
-  --gap: 2rem;
+  align-items: start;
+  --gap: 2.5rem;
 }
 .footer__contact ul {
   --gap: 1.5rem;
@@ -406,6 +426,18 @@ footer
   background: url("../../../dist/img/icon-email.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-width: 48.75em) {
+  .footer__links {
+    grid-template-columns: minmax(20rem, 1fr) 1fr 1fr;
+  }
+  .footer__info {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .footer__copyright {
+    justify-self: end;
+  }
 }
 
 /*

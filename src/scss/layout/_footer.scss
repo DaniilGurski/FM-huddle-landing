@@ -16,11 +16,12 @@ footer
 
     margin-top: 2rem;
 
-    
+
     &__cta {
         width: min(100%, 40rem);
         margin-inline: auto;
         justify-items: center;
+        align-items: center;
         padding-block: 2rem;
 
         grid-area: cta;
@@ -47,12 +48,13 @@ footer
 
 
     &__links {
-        --gap: 2rem;
+        align-items: start;
+        --gap: 2.5rem;
     }
 
 
     &__contact {
-        ul {
+        ul {    
             --gap: 1.5rem;
         }
     }
@@ -111,6 +113,23 @@ footer
             background: url("../../../dist/img/icon-email.svg");
             background-position: center;
             background-repeat: no-repeat;
+        }
+    }
+
+    @include mq-desktop() {
+        &__links {
+            grid-template-columns: minmax(20rem, 1fr) 1fr 1fr;
+        }
+
+
+        &__info {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+
+
+        &__copyright {
+            justify-self: end;
         }
     }
 }
