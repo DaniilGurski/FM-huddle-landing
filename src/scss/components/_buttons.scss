@@ -18,8 +18,18 @@
 
     cursor: pointer;
 
+    
+    &:not(:nth-child(1 of &--alt)):hover {
+        background-color: lighten(hsl(322, 100%, 66%), 10);  
+    }
+    
+
     &--alt {
         --button-color: var(--clr-secondary);
         --button-bg-color: var(--clr-primary-100);
+
+        &:hover {
+            color: lighten(hsl(192, 100%, 9%), 15);
+        }
     }
 }
