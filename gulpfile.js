@@ -11,11 +11,11 @@ const concat   = require("gulp-concat");
 const uglify   = require("gulp-uglify-es").default;
 
 const webp     = require("gulp-webp");
-const sprite   = require("gulp-svg-sprite");
 const imagemin = require("gulp-imagemin"); 
 
 const srcPath  = "src/";
 const destPath = "dist/";
+
 
 /*
 Возвращает обьект на который будет ориентироваться plumber в случаях ошибки.
